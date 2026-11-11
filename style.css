@@ -1,0 +1,222 @@
+html{
+    scroll-behavior:smooth
+}
+body{
+    margin:0;
+    background-color:#f7f3ee;
+    color:#4a3428;
+    font-family:"Noto Sans JP",sans-serif;
+    line-height:1.8;
+}
+
+h1{
+    font-family:"Noto Serif JP",serif;
+    letter-spacing:0.1em;
+}
+
+/* ==== ヘッダー ==== */
+.header{
+    padding:20px 16px;
+    text-align: center;
+    border-bottom:1px solid #e0d6cb;
+}
+.logo{
+    margin:0;
+    font-size:24px;
+}
+.nav-list{
+    list-style:none;
+    margin:12px 0 0;
+    padding:0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px 20px;
+}
+.nav-list a {
+    color:#4a3428;
+    text-decoration:none;
+    font-size:14px;
+}
+.nav-list a:hover{
+    color:#7a8b6f;
+}
+
+/* ==== メインビジュアル ====*/
+.hero{
+    background-color:#4a3428;
+    background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:40px 16px;
+    text-align:center;
+}
+.hero-copy{
+    margin: 0 0 32px;
+    color:#ffffff;
+    font-family:"Noto Serif JP",serif;
+    font-size:26px;
+    letter-spacing:0.1em;
+}
+
+/* ==== ボタン ====*/
+.btn{
+    display:inline-block;
+    padding:12px 32px;
+    background-color:#7a8b6f;
+    color:#ffffff;
+    text-decoration:none;
+    border-radius:999px;
+    letter-spacing:0.1em;
+}
+.btn:hover{
+    background-color:#5f6e55;
+}
+
+/* ==== セクション共通 ====*/
+.section{
+    max-width:800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+.section-title{
+    margin: 0 0 32px;
+    font-family:"Noto Serif JP",serif;
+    font-size:24px;
+    letter-spacing:0.1em;
+    text-align:center;
+}
+
+/* ==== 店舗紹介 ====*/
+.about-img{
+    display:block;
+    width: 100%;
+    height:auto;
+    margin-bottom:24px;
+    border-radius:8px;
+}
+
+/* ==== メニュー ====*/
+.menu-category{
+    margin:0 0 8px;
+    font-family:"Noto Serif JP",serif;
+    font-size:18px;
+    letter-spacing:0.1em;
+    color:#7a8b6f;
+}
+
+.menu-list{
+    list-style:none;
+    margin:0 0 32px;
+    padding:0;
+}
+
+.menu-list li{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    padding:12px 0;
+    border-bottom:1px dashed #d8cbbd;
+}
+
+.menu-note{
+    margin:0;
+    font-size:13px;
+    text-align:right;
+}
+
+/* ==== 営業時間 ====*/
+.hours-table{
+    width:100%;
+    border-collapse:collapse;
+    border:1px solid #e0d6cb
+}
+
+.hours-table th,
+.hours-table td {
+    padding:16px 12px;
+    border-bottom:1px solid #e0d6cb;
+    text-align:left;
+}
+
+.hours-table th{
+    width:30%;
+    background-color:#efe8df;
+    white-space:nowrap;
+}
+
+/* ==== アクセス ==== */
+.map{
+    margin-top:32px;
+}
+
+.map iframe{
+    display:block;
+    width:100%;
+    aspect-ratio:4/3;
+    border:0;
+    border-radius:8px;
+}
+
+/* ==== お問い合わせ ====*/
+.contact{
+    text-align:center;
+}
+
+/* ==== フッター ====*/
+.footer{
+    padding:32px 16px;
+    background-color:#4a3428;
+    color:#f7f3ee;
+    text-align:center;
+}
+
+.footer-logo{
+    margin:0 0 8px;
+    font-family:"Noto Serif JP",serif;
+    letter-spacing:0.1em;
+}
+
+.footer-copy{
+    margin:0;
+    font-size:12px;
+}
+
+/* ====PC表示（画面の幅が768px以上のとき） ====*/
+@media(min-width:768px){
+    .header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 40px;
+    }
+
+    .nav-list{
+        margin:0;
+    }
+
+    .hero-copy{
+        font-size:36px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .about-content{
+        display:flex;
+        align-items:center;
+        gap:40px;
+    }
+
+    .about-img{
+        width:45%;
+        flex-shrink:0;
+        margin-bottom:0;
+    }
+}
